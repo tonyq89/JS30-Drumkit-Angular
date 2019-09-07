@@ -1,0 +1,9 @@
+<div class="keys">
+    <ng-container *ngFor="let k of keyList">
+        <div [attr.data-key]="k.id" class="key">
+          <kbd>{{k.key}}</kbd>
+          <span class="sound">{{k.instrument}}</span>
+        </div>
+      </ng-container>
+</div>
+
